@@ -16,6 +16,7 @@
 		6D85CF2923D22870006DC06C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CF2823D22870006DC06C /* CoreDataStack.swift */; };
 		6D85CF2B23D228E3006DC06C /* Item+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CF2A23D228E2006DC06C /* Item+Convenience.swift */; };
 		6D85CF2D23D229C7006DC06C /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CF2C23D229C7006DC06C /* ItemController.swift */; };
+		6D85CF2F23D22CD1006DC06C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85CF2E23D22CD1006DC06C /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6D85CF2823D22870006DC06C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		6D85CF2A23D228E2006DC06C /* Item+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Convenience.swift"; sourceTree = "<group>"; };
 		6D85CF2C23D229C7006DC06C /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		6D85CF2E23D22CD1006DC06C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		6D85CF2723D22786006DC06C /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				6D85CF2E23D22CD1006DC06C /* ItemTableViewCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				6D85CF0E23D22739006DC06C /* SceneDelegate.swift in Sources */,
 				6D85CF1623D22739006DC06C /* ShoppingList31.xcdatamodeld in Sources */,
 				6D85CF2D23D229C7006DC06C /* ItemController.swift in Sources */,
+				6D85CF2F23D22CD1006DC06C /* ItemTableViewCell.swift in Sources */,
 				6D85CF2923D22870006DC06C /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

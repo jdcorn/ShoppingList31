@@ -24,7 +24,7 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="83" id="KOP-RR-XZz">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="83" id="KOP-RR-XZz" customClass="ItemTableViewCell" customModule="ShoppingList31" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KOP-RR-XZz" id="9kt-J6-l1E">
@@ -47,6 +47,9 @@
                                                         <constraint firstAttribute="width" secondItem="HhU-Dj-f0e" secondAttribute="height" multiplier="1:1" id="F31-Rr-N37"/>
                                                     </constraints>
                                                     <state key="normal" image="uncheck"/>
+                                                    <connections>
+                                                        <action selector="isPurchasedButtonTapped:" destination="KOP-RR-XZz" eventType="touchUpInside" id="tw7-zd-ucD"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -58,6 +61,10 @@
                                         <constraint firstItem="AKh-dl-uI3" firstAttribute="top" secondItem="9kt-J6-l1E" secondAttribute="topMargin" constant="1" id="jVo-ql-PGU"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="isPurchasedButton" destination="HhU-Dj-f0e" id="jAi-Ao-BqF"/>
+                                    <outlet property="itemNameLabel" destination="kGs-xi-Mv7" id="e2Z-W1-5eN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
