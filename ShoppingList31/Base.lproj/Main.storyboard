@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Item List Table View Controller-->
         <scene sceneID="h9b-TE-7XR">
             <objects>
-                <tableViewController id="0kN-eA-Sgc" sceneMemberID="viewController">
+                <tableViewController id="0kN-eA-Sgc" customClass="ItemListTableViewController" customModule="ShoppingList31" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fwv-kO-pVX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,11 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem id="ehS-JL-Kme">
-                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="IMG-sn-kPT"/>
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="IMG-sn-kPT">
+                                        <connections>
+                                            <action selector="addItemButtonTapped:" destination="0kN-eA-Sgc" id="jcf-hi-08S"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </navigationItem>
                             </items>
                         </navigationBar>
