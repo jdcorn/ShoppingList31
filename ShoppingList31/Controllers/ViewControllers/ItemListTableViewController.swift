@@ -35,8 +35,16 @@ class ItemListTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return ItemController.shared.fetchedResultsController.sections?.count ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return ItemController.shared.fetchedResultsController.sectionIndexTitles[section] == "0" ? "Not purchased" : "Purchased"
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ItemController.shared.fetchedResultsController.fetchedObjects?.count ?? 0
+        return ItemController.shared.fetchedResultsController.sections?[section].numberOfObjects ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
